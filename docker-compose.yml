@@ -5,6 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile
 
+    container_name: fastapi
+
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://127.0.0.1:8000/healthz || (echo 'Healthcheck failed' && exit 1)"]
       interval: 10s
@@ -13,7 +15,7 @@ services:
 
     ### Add environment variables here
     environment:
-      - DATABASE_URL= "postgresql://postgres:postgrespassword@postgres:5432/tasksdb"
+      DATABASE_URL: "postgresql://postgres:postgrespassword@postgres:5432/tasksdb"
 
     ### Add depends postgres here
     depends_on: 
