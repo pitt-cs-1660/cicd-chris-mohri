@@ -112,6 +112,6 @@ gcloud artifacts repositories add-iam-policy-binding [Artifact Registry] \
 ```
 
 ```
-gcloud artifacts repositories add-iam-policy-binding cs1660repo1 --location=us-central1 --member="principalSet://iam.googleapis.com/projects/945227819116/locations/global/workloadIdentityPools/GitHub/attribute.repository/chris-mohri/cicd-chris-mohri" --role="roles/artifactregistry.createOnPushWriter" --project="spring-cs1660-2025"
+gcloud artifacts repositories add-iam-policy-binding cs1660repo1 --location=us-central1 --member="principalSet://iam.googleapis.com/projects/945227819116/locations/global/workloadIdentityPools/github/attribute.repository/chris-mohri/cicd-chris-mohri" --role="roles/artifactregistry.createOnPushWriter" --project="spring-cs1660-2025"
 
 ```
