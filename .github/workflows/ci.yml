@@ -93,4 +93,5 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/spring-cs1660-2025/cs1660repo1
+          # tags: [YOUR REGION e.g. us-central1]-docker.pkg.dev/cc-spring2025/dansc0de/fastapi-server:v2
+          tags: us-central1-docker.pkg.dev/spring-cs1660-2025/cs1660repo1/fastapi-server:v1
