@@ -17,10 +17,10 @@ WORKDIR /app
 
 COPY --from=build /app /app
 COPY entrypoint.sh /entrypoint.sh
-
-RUN pip install uvicorn
-RUN pip install fastapi
-RUN pip install psycopg2
+COPY --from=build /usr /usr
+# RUN pip install uvicorn
+# RUN pip install fastapi
+# RUN pip install psycopg2
 
 EXPOSE 8000
 
